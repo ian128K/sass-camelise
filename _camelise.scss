@@ -1,0 +1,32 @@
+//  Function for converting an input string to CamelCase. Defaults to
+//  UpperCamelCase. For lowerCamelCase, pass $lower as `true`.
+//  ————————————————————————————————————————————————————————————————————
+@function camelise($string, $lower: false) {
+  $result: "";
+  $exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".";
+  $buffer: $string;
+  @for $i from 1 through str-length($buffer) {
+    $char: str-slice($buffer, $i, $i);
+    @if $i == 1 {
+      @if $lower == true {
+        $result: to-lower-case($char);
+      }
+      @else {
+        $result: to-upper-case($char);
+      }
+    }
+    @else {
+      $prev: str-slice($buffer, $i - 1, $i - 1);
+      @if not not index($exclude, $char) {
+        $result: $result;
+      }
+      @else if not not index($exclude, $prev) {
+        $result: $result + to-upper-case($char);
+      }
+      @else {
+        $result: $result + $char;
+      }
+    }
+  }
+  @return $result;
+}

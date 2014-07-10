@@ -3,7 +3,7 @@
 //  ————————————————————————————————————————————————————————————————————
 @function camelise($string, $lower: false) {
   $result: "";
-  $exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".";
+  $exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "'", "(", ")", "[", "]", "\U+0022";
   $buffer: $string;
   @for $i from 1 through str-length($buffer) {
     $char: str-slice($buffer, $i, $i);

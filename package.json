@@ -1,0 +1,23 @@
+{
+  "author":	"Ian Adams",
+  "name": "sass-camelise",
+  "version": "1.0.0-alpha",
+  "homepage": "https://github.com/ian128K/sass-camelise",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/ian128K/sass-camelise/master/LICENSE"
+  },
+  "bugs": "https://github.com/ian128K/sass-camelise/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ian128K/sass-camelise.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bootcamp": "1.1.x",
+    "grunt": "0.4.x",
+    "grunt-bump": "0.0.x",
+    "grunt-contrib-sass": "0.7.x",
+    "grunt-contrib-watch": "0.6.x"
+  }
+}

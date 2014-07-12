@@ -5,17 +5,12 @@
 	$result: ""
 	$exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "(", ")", "[", "]", "'", '"'
 	$buffer: $string
-	// loop through each character of the buffer
 	@for $i from 1 through str-length($buffer)
-		// slice the current character from the buffer
 		$char: str-slice($buffer, $i, $i)
 		@if $i == 1
-			// if the character is an excluded character…
 			@if not not index($exclude, $char)
-				// …don't add it to the result string we're building
 				$result: $result
 			@else if $lower == true
-				// …otherwise change its case, based on $lower
 				$result: to-lower-case($char)
 			@else
 				$result: to-upper-case($char)

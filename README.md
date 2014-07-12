@@ -8,7 +8,7 @@ Sass function for converting an input string to CamelCase. Defaults to UpperCame
 		$result: ""
 	
 		// list of characters to exclude
-		$exclude: " ", "-", "–", "—", "_", ",", ";", ":", "."
+		$exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "(", ")", "[", "]", "'", '"'
 	
 		// load the input into a buffer for manipulation
 		$buffer: $string

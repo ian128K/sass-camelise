@@ -33,9 +33,9 @@ Sass function for converting an input string to CamelCase. Defaults to UpperCame
 				@else
 					$result: to-upper-case($char)
 	
-			@else
+			@else // build the rest of the string
 
-				// build the rest of the string
+				// assign the previous character in the buffer to a variable
 				$prev: str-slice($buffer, $i - 1, $i - 1)
 	
 				// if current $char == $exclude, do nothing

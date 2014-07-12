@@ -20,9 +20,13 @@ Sass function for converting an input string to CamelCase. Defaults to UpperCame
 			$char: str-slice($buffer, $i, $i)
 	
 			@if $i == 1
-	
-				// assign case to the first character based on $lower
-				@if $lower == true
+			
+				// if the character is an excluded character…
+				@if not not index($exclude, $char)
+					// …don't add it to the result string we're building
+					$result: $result
+				// otherwise assign case to the first character based on $lower
+				@else if $lower == true
 					$result: to-lower-case($char)
 				@else
 					$result: to-upper-case($char)

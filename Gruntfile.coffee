@@ -14,7 +14,7 @@ module.exports = (grunt) ->
 		sass:
 			test:
 				options:
-					style: 'expanded',
+					style: 'expanded'
 					loadPath: './node_modules/bootcamp/dist'
 				files:
 					'./specresults.css': './specrunner.sass'

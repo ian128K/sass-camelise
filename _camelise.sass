@@ -1,6 +1,7 @@
+//  ====================================================================
 //  Sass function for converting an input string to CamelCase. Defaults
 //  to UpperCamelCase. For lowerCamelCase, pass $lower as `true`.
-//  ————————————————————————————————————————————————————————————————————
+//  ====================================================================
 @function camelise($string, $lower: false)
 	$buffer: $string
 	$exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "(", ")", "[", "]", "'", '"'

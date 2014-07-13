@@ -29,7 +29,7 @@ Sass function for converting an input string to CamelCase. Defaults to UpperCame
 					// …don't add it to the result string we're building
 					$result: $result
 
-				// otherwise assign case to the first character based on $lower
+				// otherwise transform case of the first character based on $lower
 				@else if $lower == true
 					$result: to-lower-case($char)
 				@else

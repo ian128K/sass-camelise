@@ -2,14 +2,13 @@ module.exports = (grunt) ->
 
 	# Modules
 	grunt.loadNpmTasks('bootcamp')
-	grunt.loadNpmTasks('grunt-bump')
 	grunt.loadNpmTasks('grunt-contrib-sass')
 	grunt.loadNpmTasks('grunt-contrib-watch')
 
 	# Grunt Tasks
 	grunt.initConfig(
 		meta:
-			version: '1.0.0-alpha'
+			version: '1.0.0-alpha.1'
 
 		# Sass
 		sass:
@@ -18,7 +17,7 @@ module.exports = (grunt) ->
 					style: 'expanded',
 					loadPath: './node_modules/bootcamp/dist'
 				files:
-					'.specresults.css': './specrunner.sass'
+					'./specresults.css': './specrunner.sass'
 
 		# Bootcamp
 		bootcamp:

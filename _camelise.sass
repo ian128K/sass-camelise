@@ -2,11 +2,11 @@
 //  to UpperCamelCase. For lowerCamelCase, pass $lower as `true`.
 //  ————————————————————————————————————————————————————————————————————
 @function camelise($string, $lower: false)
-	$result: ""
-	$exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "(", ")", "[", "]", "'", '"'
 	$buffer: $string
+	$exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "(", ")", "[", "]", "'", '"'
 	$char: ""
 	$prev: ""
+	$result: ""
 	@for $i from 1 through str-length($buffer)
 		$char: str-slice($buffer, $i, $i)
 		@if $i == 1

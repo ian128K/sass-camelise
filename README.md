@@ -12,6 +12,10 @@ Sass function for converting an input string to CamelCase. Defaults to UpperCame
 	
 		// load the input into a buffer for manipulation
 		$buffer: $string
+
+		// declare loop variables outside of the loop
+		$char: ""
+		$prev: ""
 	
 		// loop through each character of the buffer
 		@for $i from 1 through str-length($buffer)

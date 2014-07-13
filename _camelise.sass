@@ -5,6 +5,8 @@
 	$result: ""
 	$exclude: " ", "-", "–", "—", "_", ",", ";", ":", ".", "(", ")", "[", "]", "'", '"'
 	$buffer: $string
+	$char: ""
+	$prev: ""
 	@for $i from 1 through str-length($buffer)
 		$char: str-slice($buffer, $i, $i)
 		@if $i == 1

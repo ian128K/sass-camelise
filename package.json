@@ -1,7 +1,7 @@
 {
   "author":	"Ian Adams",
   "name": "sass-camelise",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha.1",
   "homepage": "https://github.com/ian128K/sass-camelise",
   "licenses": {
     "type": "MIT",

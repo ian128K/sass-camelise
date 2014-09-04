@@ -1,22 +1,33 @@
 {
-  "author":	"Ian Adams",
   "name": "sass-camelise",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/ian128K/sass-camelise",
-  "licenses": {
-    "type": "MIT",
+  "description": "Sass function for converting a string to either UpperCamelCase or lowerCamelCase.",
+  "author": {
+    "name": "Ian Adams",
+    "email": "ian@128K.co",
+    "url": "http://128K.co/"
+  },
+  "keywords": [
+    "sass",
+    "bootcamp",
+    "camelise",
+    "camelize"
+  ],
+  "license": {
+    "type": "ISC",
     "url": "https://raw.github.com/ian128K/sass-camelise/master/LICENSE"
   },
   "bugs": "https://github.com/ian128K/sass-camelise/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ian128K/sass-camelise.git"
+    "url": "https://github.com/ian128K/sass-camelise.git"
   },
   "dependencies": {},
   "devDependencies": {
-    "bootcamp": "1.1.x",
-    "grunt": "0.4.x",
-    "grunt-contrib-sass": "0.7.x",
-    "grunt-contrib-watch": "0.6.x"
+    "bootcamp": "~1.1.6",
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }
